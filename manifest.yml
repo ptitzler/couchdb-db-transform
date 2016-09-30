@@ -4,5 +4,12 @@ applications:
   instances: 1
   domain: mybluemix.net
   name: couchdb-db-copy-and-transform-service
-  host: couchdb-db-copy-and-transform-service
+  host: deployment-tracker-cleansing-service
   disk_quota: 1024M
+  env:
+     CLIENT_FILTER: sample_filter_functions/ignore_design_and_deleted_documents.js
+     TRANSFORM_FUNCTION: deployment_tracker_transformations/deployment_tracker_cleansing.js
+     SOURCE_COUCH_DB_URL: <TODO>
+     TARGET_COUCH_DB_URL: <TODO>
+     CONSOLE_USER: <TODO>
+     CONSOLE_PASSWORD: <TODO>
