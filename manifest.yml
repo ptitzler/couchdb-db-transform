@@ -9,7 +9,7 @@ applications:
   env:
      CLIENT_FILTER: sample_filter_functions/ignore_design_and_deleted_documents.js
      TRANSFORM_FUNCTION: deployment_tracker_transformations/deployment_tracker_cleansing.js
-     SOURCE_COUCH_DB_URL: <TODO>
-     TARGET_COUCH_DB_URL: <TODO>
-     CONSOLE_USER: <TODO>
-     CONSOLE_PASSWORD: <TODO>
+     SOURCE_COUCH_DB_URL: <deployment_tracker_database_url>
+     TARGET_COUCH_DB_URL: <staging_database_url>
+     CONSOLE_USER: <console_user>
+     CONSOLE_PASSWORD: <console_user_password>
