@@ -20,7 +20,7 @@ The following customizations have been applied:
  * `CLIENT_FILTER` is pre-set to `sample_filter_functions/ignore_design_and_deleted_documents.js`
  * `TRANSFORM_FUNCTION` is pre-set to `deployment_tracker_transformations/deployment_tracker_cleansing.js`
  
- Edit `manifest.yml` to finalize the customization:
+Edit `manifest.yml` to finalize the customization:
  
  * Set `SOURCE_COUCH_DB_URL` to the Deployment Tracker database URL
  * Set `TARGET_COUCH_DB_URL` to the staging database URL
