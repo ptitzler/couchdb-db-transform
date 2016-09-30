@@ -17,8 +17,8 @@ $ cd couchdb-db-transform
 #### Customization (in `manifest.yml`)
 
 The following customizations have been applied:
- * Client-side filter is pre-set to `sample_filter_functions/ignore_design_and_deleted_documents.js`
- * Transformation function is pre-set to `deployment_tracker_transformations/deployment_tracker_cleansing.js`
+ * `CLIENT_FILTER` is pre-set to `sample_filter_functions/ignore_design_and_deleted_documents.js`
+ * `TRANSFORM_FUNCTION` is pre-set to `deployment_tracker_transformations/deployment_tracker_cleansing.js`
  
  Edit `manifest.yml` to finalize the customization:
  
